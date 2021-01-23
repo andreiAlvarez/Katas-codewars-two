@@ -16,3 +16,8 @@ function getDifference(bird1, bird2) {
   }
   return dif;
 }
+
+// kata 2
+
+const roomMates = (rooms, floor) => rooms.slice(floor * 6 - 6, +floor * 6).filter(v => v);
+
