@@ -21,3 +21,6 @@ function getDifference(bird1, bird2) {
 
 const roomMates = (rooms, floor) => rooms.slice(floor * 6 - 6, +floor * 6).filter(v => v);
 
+// kata 3 
+
+const flip = fn => (...args) => fn(...args.reverse());
