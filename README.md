@@ -58,3 +58,18 @@ you will create a program that will take two lists of integers, a and b. Each li
 For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 
 Your function will be tested with pre-made examples as well as random ones.
+
+// kata 5
+
+Create (a) method(s) eqAll that determines if all elements of a list are equal.
+list can be a String or an Array; return value is a Boolean.
+Your method(s) should not be enumerable. Equality should be strict (===).
+
+Examples
+"aaaaa".eqAll() => true
+"abcde".eqAll() => false
+[0,0,0].eqAll() => true
+[0,1,2].eqAll() => false
+
+"".eqAll() => true
+[].eqAll() => true
