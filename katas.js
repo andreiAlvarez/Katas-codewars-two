@@ -28,3 +28,19 @@ const flip = fn => (...args) => fn(...args.reverse());
 // kata 4
 
 const findDifference = ([a, b, c], [d, e, f]) => Math.abs(a*b*c - d*e*f);
+
+// kata 5
+
+Object.defineProperty( String.prototype, "eqAll", { value: function eqAll() {
+  for (let i=0;i<this.length;i++){
+    if (this[0]!==this[i]) return false
+  }
+  return true
+} } );
+
+Object.defineProperty( Array.prototype, "eqAll", { value: function eqAll() {
+  for (let i=0;i<this.length;i++){
+    if (this[0]!==this[i]) return false
+  }
+  return true
+} } ); 
