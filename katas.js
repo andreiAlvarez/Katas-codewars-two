@@ -44,3 +44,13 @@ Object.defineProperty( Array.prototype, "eqAll", { value: function eqAll() {
   }
   return true
 } } ); 
+
+// kata 6 
+
+function solve(arr){
+   let [x, y, z] = arr.sort((a, b) => a - b);
+  return Math.min(x + y, Math.floor((x + y + z) / 2));
+}
+
+// solution 2
+solve=([a,b,c])=>Math.min(a+b,a+c,b+c,(a+b+c)/2|0)
