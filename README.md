@@ -92,3 +92,11 @@ solve([4,1,1]) = 2
 // kata 7
 
 Write a function that reverses a list, without using any built-in reverse functions.
+
+// kata 8 
+
+Teach snoopy and scooby doo how to bark using object methods. Currently only snoopy can bark and not scooby doo.
+
+snoopy.bark(); // return "Woof"
+scoobydoo.bark(); // undefined
+Use method prototypes to enable all Dogs to bark.
