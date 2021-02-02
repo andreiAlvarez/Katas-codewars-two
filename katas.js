@@ -54,3 +54,15 @@ function solve(arr){
 
 // solution 2
 solve=([a,b,c])=>Math.min(a+b,a+c,b+c,(a+b+c)/2|0)
+
+// kata 7
+
+const rev = xs => { 
+  const arr=[];
+  xs.map(v=>arr.unshift(v))
+  return arr
+}
+
+// solution 2 
+
+const rev = a => a.reduce((a, b) => [b, ...a], []);
