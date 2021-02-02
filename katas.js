@@ -66,3 +66,21 @@ const rev = xs => {
 // solution 2 
 
 const rev = a => a.reduce((a, b) => [b, ...a], []);
+
+// kata 8 
+
+function Dog(breed) {
+  this.breed = breed;
+}
+
+var snoopy = new Dog("Beagle");
+
+Dog.prototype.bark = function() {
+  return "Woof";
+};
+
+var scoobydoo = new Dog("Great Dane");
+
+// solution 2
+
+scoobydoo = snoopy = {bark: String.bind(1, 'Woof')};
