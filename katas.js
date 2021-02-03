@@ -84,3 +84,7 @@ var scoobydoo = new Dog("Great Dane");
 // solution 2
 
 scoobydoo = snoopy = {bark: String.bind(1, 'Woof')};
+
+// kata 9
+
+const isLockNessMonster = s => /tree fiddy| three fifty|3.50/.test(s);
