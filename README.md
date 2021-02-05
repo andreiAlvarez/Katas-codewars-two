@@ -110,3 +110,28 @@ It was then that you realize the musician was a 400 foot tall beast from the pal
 There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A.) It is a 400 foot tall beast from the paleolithic era B.) It will ask you for tree fiddy
 
 Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. Note: It can also be written as 3.50 or three fifty.
+
+// kata 10 
+
+You have three input arguments -> actually cards -> actually strings :)
+
+Let's play the game 'Twenty-one' creating a function that returns:
+
+'twenty-one' ---> if the sum of cards equals 21
+'more' ---> if the sum of cards more than 21
+'less' ---> if the sum of cards less than 21
+One nuance - we have lost spades cards of our deck and now it look like (preloaded as deck) that:
+
+deck = ['2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣','A♣',
+        '2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦','A♦',
+        '2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','J♥','Q♥','K♥','A♥'];
+A few games:
+
+('3♣', 'J♦', 'Q♥') -> 'less' // 3 + 2 + 3 < 21
+('7♣', '7♦', '7♥') -> 'twenty-one' // 7 + 7 + 7  == 21
+('10♣', 'Q♣','9♦') -> 'more' // 10 + 3 + 9 > 21
+Some details:
+
+the result does not depend on suit
+ace can be only 11 points
+points of J,Q,K are 2,3,4
