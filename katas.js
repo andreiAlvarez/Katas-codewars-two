@@ -103,3 +103,18 @@ function twentyOne(...arr) {
     .reduce((a, b) => a + b, 0);
   return sum === 21 ? "twenty-one" : sum < 21 ? "less" : "more";
 }
+
+// kata 11
+
+const getWeight = name => name
+    .split("")
+    .reduce(
+      (a, v) =>
+        a +
+        (/[a-z]/.test(v)
+          ? v.charCodeAt() - 32
+          : /[A-Z]/.test(v)
+          ? v.charCodeAt() + 32
+          : 0),
+      0
+    );
