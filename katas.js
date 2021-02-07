@@ -118,3 +118,39 @@ const getWeight = name => name
           : 0),
       0
     );
+
+
+// kata 12
+
+function solve(n) {
+  let count = 0;
+  while (n >= 500) {
+    count++;
+    n -= 500;
+  }
+  while (n >= 200) {
+    count++;
+    n -= 200;
+  }
+  while (n >= 100) {
+    count++;
+    n -= 100;
+  }
+  while (n >= 50) {
+    count++;
+    n -= 50;
+  }
+  while (n >= 20) {
+    count++;
+    n -= 20;
+  }
+  while (n >= 10) {
+    count++;
+    n -= 10;
+  }
+  return n === 0 ? count : -1;
+}
+
+// solution 2
+
+const solve=n=>n%10?-1:n?1+solve(n-[500,200,100,50,20,10].filter(x=>x<=n)[0]):0; 
