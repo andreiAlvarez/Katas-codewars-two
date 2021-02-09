@@ -154,3 +154,15 @@ function solve(n) {
 // solution 2
 
 const solve=n=>n%10?-1:n?1+solve(n-[500,200,100,50,20,10].filter(x=>x<=n)[0]):0; 
+
+// kata 13
+
+const mapVector = (vector, circle1, circle2) => {
+   const [x0, y0] = vector
+    const [x1, y1, r1] = circle1
+    const [x2, y2, r2] = circle2
+    const sc = r2/r1
+    const [dx1, dy1] = [x0-x1, y0-y1]
+    const [dx2, dy2] = [sc*dx1, sc*dy1]
+    return [x2+dx2, y2+dy2];
+}
