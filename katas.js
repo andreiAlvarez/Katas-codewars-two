@@ -166,3 +166,7 @@ const mapVector = (vector, circle1, circle2) => {
     const [dx2, dy2] = [sc*dx1, sc*dy1]
     return [x2+dx2, y2+dy2];
 }
+
+// solution 2
+
+const mapVector = ([x, y], [x1, y1, r1], [x2, y2, r2]) => [(x - x1) * r2 / r1 + x2, (y - y1) * r2 / r1 + y2];
