@@ -163,4 +163,6 @@ You are given money in nominal value of n with 1<=n<=1500.
 
 Try to find minimal number of notes that must be used to repay in dollars, or output -1 if it is impossible.
 
-Good Luck!!!
+// kata 13
+
+https://www.codewars.com/kata/5da995d583326300293ce4cb/train/javascript
