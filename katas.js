@@ -182,3 +182,7 @@ const collatz = (n, count = 0) => {
 // solution 2 
 
 collatz=(n,c=1)=>n==1?c:collatz((n&1)==0?n/2:n*3+1,c+1);
+
+// kata 15
+
+const calculateCAGR = (fv,pv,n) => ((Math.pow(fv / pv, 1 / n) - 1) * 100).toFixed(2) * 1;
