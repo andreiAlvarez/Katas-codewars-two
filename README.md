@@ -166,3 +166,7 @@ Try to find minimal number of notes that must be used to repay in dollars, or ou
 // kata 13
 
 https://www.codewars.com/kata/5da995d583326300293ce4cb/train/javascript
+
+// kata 14 
+
+https://www.codewars.com/kata/57e8c68c97a05990b10000c3/train/javascript
