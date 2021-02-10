@@ -170,3 +170,15 @@ const mapVector = (vector, circle1, circle2) => {
 // solution 2
 
 const mapVector = ([x, y], [x1, y1, r1], [x2, y2, r2]) => [(x - x1) * r2 / r1 + x2, (y - y1) * r2 / r1 + y2];
+
+// kata 14 
+
+const collatz = (n, count = 0) => {
+  if (n <= 1) return count + 1;
+  n = n % 2 === 0 ? n / 2 : n * 3 + 1;
+  return collatz(n, count + 1);
+}
+
+// solution 2 
+
+collatz=(n,c=1)=>n==1?c:collatz((n&1)==0?n/2:n*3+1,c+1);
