@@ -170,3 +170,7 @@ https://www.codewars.com/kata/5da995d583326300293ce4cb/train/javascript
 // kata 14 
 
 https://www.codewars.com/kata/57e8c68c97a05990b10000c3/train/javascript
+
+// kata 15
+
+https://www.codewars.com/kata/58db95e7091c114391000040/train/javascript
